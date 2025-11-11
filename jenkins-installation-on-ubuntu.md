@@ -26,9 +26,9 @@ Continue in the terminal with the following steps.
     Update the package manager to include the official sources for Jenkins installation files.
     Update the package manager to refer to the new key and installation sources.
 
-             ```bash
+```bash
 
-             sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
+sudo wget -O /usr/share/keyrings/jenkins-keyring.asc \
 
                https://pkg.jenkins.io/debian-stable/jenkins.io-2023.key
 
@@ -39,26 +39,32 @@ Continue in the terminal with the following steps.
                https://pkg.jenkins.io/debian-stable binary/ | sudo tee \
 
                /etc/apt/sources.list.d/jenkins.list > /dev/null
-
+```
  
+```
+sudo apt-get update
 
-             sudo apt-get update
-
-             ```
+```
 
 3. Run the following command to install Jenkins:
 
-    ```sudo apt-get install -y jenkins```
+```
+sudo apt-get install -y jenkins
+```
 
 4. Confirm that the command completes successfully.
 
 5. Run the following command to retrieve the initial administrator password:
 
-    ```sudo cat /var/lib/jenkins/secrets/initialAdminPassword```
+```
+sudo cat /var/lib/jenkins/secrets/initialAdminPassword
+```
 
 6. Copy the password for use during the next installation steps.
 
-7. Complete the installation by opening a browser and connecting to the system’s network address using port 8080.
+7. Complete the installation by opening a browser and connecting to the system’s network address using port `8080`.
 
-    If you are installing Jenkins on a local system, use: ```http://localhost:8080```
-    If you are installing Jenkins on a remote system, specify the system’s network name, for example: ```http://system-name.example.com:8080```
+    If you are installing Jenkins on a local system, use: `http://localhost:8080`
+    If you are installing Jenkins on a remote system, specify the system’s network name, for example: `http://system-name.example.com:8080`
+
+```
