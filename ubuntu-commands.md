@@ -10,7 +10,7 @@ If **lshw** isn’t installed:
 sudo apt update && sudo apt install -y lshw
 ```
 
-Kernel Info
+**Kernel Info**
 
 ```bash
 lsb_release -a
@@ -22,7 +22,7 @@ lsb_release -a
 lscpu
 ```
 
-Quick one-liner:
+**Quick one-liner:**
 
 ```
 nproc
