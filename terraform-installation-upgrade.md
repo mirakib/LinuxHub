@@ -62,3 +62,44 @@ If choco command fails (corrupted install), follow this clean fix:
     ```Powershell
    choco install terraform -y
     ```
+
+---
+
+<h1 align="center">Terraform Installation</h1>
+
+<h3 align="center">Ubuntu</h3>
+
+
+1. Update system & install prerequisites
+
+   ```sh
+   sudo apt update
+   sudo apt install -y gnupg software-properties-common curl
+   ```
+
+2. Add HashiCorp GPG key
+
+   ```sh
+   curl -fsSL https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg
+   ```
+
+3. Add HashiCorp repository
+
+   ```sh
+   echo "deb [signed-by=/usr/share/keyrings/hashicorp-archive-keyring.gpg] \
+   https://apt.releases.hashicorp.com $(lsb_release -cs) main" \
+   | sudo tee /etc/apt/sources.list.d/hashicorp.list
+   ```
+
+4. Install Terraform
+
+   ```sh
+   sudo apt update
+   sudo apt install terraform -y
+   ```
+
+5. Verify installation
+
+   ```bash
+   terraform -version
+   ```
