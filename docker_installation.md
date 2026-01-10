@@ -1,8 +1,8 @@
 #### Docker installation script for Linux/Ubuntu
 
-Run the following script
+**Run the following script**
 
-```
+```sh
 #!/bin/bash
 
 # This script automates the installation of Docker Engine and adds the current user
@@ -38,19 +38,13 @@ apt-get update
 # Install Docker Engine
 apt-get install -y docker-ce docker-ce-cli containerd.io docker-buildx-plugin docker-compose-plugin
 
-
-# Step 2: Add your user to the docker group
-print_status "Step 2: Adding the current user '$USER' to the 'docker' group."
-# This command adds the user to the group, but it won't be active until a new session.
-
-
 print_status "Docker setup finished successfully."
 ```
 
-Add current user to docker group
+**Add current user to docker group**
 
 ```
 usermod -aG docker "$USER"
 ```
 
-Now log out and log in back.
+**Now log out and log in back.**
