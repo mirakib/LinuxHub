@@ -1,12 +1,41 @@
-
 # Configure AWS CLI with Access Keys
 
 ### Step 1: Install AWS CLI
 
-Install AWS Command Line Interface from [Here](https://aws.amazon.com/cli/)
+- Install AWS Command Line Interface from [Here](https://aws.amazon.com/cli/)
 
-`aws --version`
- 
+- How to Use the AWS CLI: [Here](https://www.datacamp.com/tutorial/aws-cli-tutorial)
+
+- Install using one script: [Here](https://github.com/mirakib/Linux-Automation-Scripts/blob/main/AWS/install_aws.ubuntu.sh)
+
+**Or install manually:**
+
+```sh
+# Switch to superuser
+sudo su -
+
+# If you’re on Amazon Linux, to install the latest version of the AWS CLI, you must first uninstall the pre-installed yum version
+yum remove awscli
+
+# Download the AWS CLI zip file
+curl "https://awscli.amazonaws.com/awscli-exe-linux-x86_64.zip" -o "awscliv2.zip"
+
+# Install unzip
+sudo apt install unzip
+
+# Unzip the file
+sudo unzip awscliv2.zip
+
+# Run the installer
+sudo ./aws/install
+
+# Verify AWS CLI 
+aws --version
+```
+
+**Check AWS CLI version:**
+
+`aws --version` 
 
 ### Step 2: Configure AWS CLI with Access Keys
 
