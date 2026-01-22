@@ -1,3 +1,6 @@
+Follow for more:
+- [SSH Essentials: Working with SSH Servers, Clients, and Keys](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
+- [How to Use SSH to Connect to a Remote Server (Step-by-Step Guide)](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)
 
 ### Step 1: Generate SSH Key Pair
 Open a terminal on your local machine and run the following command:\
