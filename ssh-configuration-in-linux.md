@@ -1,16 +1,14 @@
-Follow for more:
-- [SSH Essentials: Working with SSH Servers, Clients, and Keys](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
-- [How to Use SSH to Connect to a Remote Server (Step-by-Step Guide)](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)
-
 ### Step 1: Generate SSH Key Pair
+
 Open a terminal on your local machine and run the following command:\
 `ssh-keygen -t rsa -b 2048`
 
 ### Step 2: Copy Public Key to Remote Host
+
 Assuming your remote host is running a Unix-like operating system, you can use the ssh-copy-id command to copy your public key to the remote host. Replace "username" and "hostname" with your actual remote username and hostname/IP.\
 `ssh-copy-id username@hostname`\
 
-This command adds your public key to the ~/.ssh/authorized_keys file on the remote host.
+This command adds your public key to the `~/.ssh/authorized_keys` file on the remote host.
 
 ### Step 3: Test SSH Connection
 Try to SSH into the remote host\
@@ -33,3 +31,10 @@ Host myhost
 ### Step 5: Connect Using SSH Config
 Now you can connect to your remote host using the configured alias:\
 `ssh myhost`
+
+
+
+### Follow for more:
+- [SSH Essentials: Working with SSH Servers, Clients, and Keys](https://www.digitalocean.com/community/tutorials/ssh-essentials-working-with-ssh-servers-clients-and-keys)
+- [How to Set Up SSH Keys on Ubuntu: A Comprehensive Guide](https://www.digitalocean.com/community/tutorials/how-to-set-up-ssh-keys-on-ubuntu-22-04)
+- [How to Use SSH to Connect to a Remote Server (Step-by-Step Guide)](https://www.digitalocean.com/community/tutorials/how-to-use-ssh-to-connect-to-a-remote-server)
