@@ -119,4 +119,6 @@ sudo apt-get purge nfs-common
 sudo apt-get autoremove
 ```
 
-For more : [How to Set Up an NFS Mount on Ubuntu (Step-by-Step Guide)](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04)
+For more : 
+- [How to Set Up an NFS Mount on Ubuntu (Step-by-Step Guide)](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-mount-on-ubuntu-20-04)
+- [How To Set Up an NFS Server Using Block Storage](https://www.digitalocean.com/community/tutorials/how-to-set-up-an-nfs-server-using-block-storage)
