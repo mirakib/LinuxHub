@@ -1,3 +1,7 @@
+# How To Install Jenkins on Ubuntu
+
+https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-22-04
+
 # Install Java 21 JDK
 
 Systems operating Jenkins must have a Java runtime environment installed. The recommended version of Java for use with Jenkins is Java 21.
