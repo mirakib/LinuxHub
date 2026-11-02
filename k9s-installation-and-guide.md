@@ -7,16 +7,23 @@ K9s is an open-source, terminal-based UI designed to help you interact with your
 
 - **For Linux and macOS:**
 
-    ```curl -sS https://webinstall.dev/k9s | bash```
+    ```sh
+    curl -sS https://webinstall.dev/k9s | bash
+    ```
 
 - **For Windows:**
 
-    ```curl.exe -A MS https://webinstall.dev/k9s | powershell```
+    ```sh
+    curl.exe -A MS https://webinstall.dev/k9s | powershell
+    ```
 
 **Note: Restart your terminal after the installation is complete.**
 
 ### Verify 
-  `k9s version`
+
+    ```sh
+    k9s version
+    ```
 
 
 ### Common Keyboard Shortcuts
