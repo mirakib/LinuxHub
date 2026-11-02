@@ -8,22 +8,29 @@ K9s is an open-source, terminal-based UI designed to help you interact with your
 - **For Linux and macOS:**
 
     ```sh
-    curl -sS https://webinstall.dev/k9s | bash
+    curl --http1.1 -fL \
+        https://github.com/derailed/k9s/releases/download/v0.51.0/k9s_Linux_amd64.tar.gz \
+        -o ~/Downloads/k9s_Linux_amd64.tar.gz
     ```
 
-- **For Windows:**
+- **Extract manually**
 
-    ```sh
-    curl.exe -A MS https://webinstall.dev/k9s | powershell
-    ```
+  ```sh
+  cd ~/Downloads
+  tar -xzf k9s_Linux_amd64.tar.gz
+  ```
 
-**Note: Restart your terminal after the installation is complete.**
+- **Install K9s manually**
 
-### Verify 
+  ```sh
+  sudo install k9s /usr/local/bin/k9s
+  ```
 
-```sh
-k9s version
-```
+- **Check & Verify**
+
+  ```sh
+  k9s version
+  ```
 
 
 ### Common Keyboard Shortcuts
@@ -44,3 +51,28 @@ k9s version
 | **0** | Switch to all namespace view. |
 | **?** | Show help. |
 | **Ctrl+c** | Quit the application. |
+
+
+##  Resource navigation cheat sheet
+
+| Command | Kubernetes Resource |
+|---|---|
+| `:po` | Pods |
+| `:deploy` or `:dp` | Deployments |
+| `:rs` | ReplicaSets |
+| `:sts` | StatefulSets |
+| `:ds` | DaemonSets |
+| `:svc` | Services |
+| `:ing` | Ingress |
+| `:ns` | Namespaces |
+| `:pv` | PersistentVolumes |
+| `:pvc` | PersistentVolumeClaims |
+| `:sc` | StorageClasses |
+| `:cm` | ConfigMaps |
+| `:secret` | Secrets |
+| `:job` | Jobs |
+| `:cj` | CronJobs |
+| `:node` | Nodes |
+| `:sa` | ServiceAccounts |
+| `:cr` | ClusterRoles |
+| `:crb` | ClusterRoleBindings |
