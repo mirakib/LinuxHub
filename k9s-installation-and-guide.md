@@ -1,7 +1,7 @@
 <p align="center"><img width="399" height="201" alt="image" src="https://github.com/user-attachments/assets/c12a30e5-6391-45a4-a7e0-ea2617631921" /></p>
 
 
-K9s is an open-source, terminal-based UI designed to help you interact with your Kubernetes clusters. It provides a real-time view of all your resources—pods, deployments, services, CRDs, and more—right from your terminal. K9s simplifies cluster management by offering quick keyboard shortcuts and intuitive navigation, allowing you to troubleshoot and operate clusters faster than with kubectl alone.
+K9s is an open-source, terminal-based UI designed to help you interact with your Kubernetes clusters. It provides a real-time view of all your resources—pods, deployments, services, CRDs, and more—right from your terminal. K9s simplifies cluster management by offering quick keyboard shortcuts and intuitive navigation, allowing you to troubleshoot and operate clusters faster than with `kubectl` alone.
 
 ### Automatic Installation Via Webi (Recommended) 
 
@@ -21,9 +21,9 @@ K9s is an open-source, terminal-based UI designed to help you interact with your
 
 ### Verify 
 
-    ```sh
-    k9s version
-    ```
+```sh
+k9s version
+```
 
 
 ### Common Keyboard Shortcuts
